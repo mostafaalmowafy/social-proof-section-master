@@ -1,3 +1,4 @@
+
 :root{
     --primary-h1:hsl(300, 43%, 22%);
     --primary-stat:hsl(333, 80%, 67%);
@@ -97,11 +98,8 @@ body {
         margin-left: 235px;
     }
 }
-
-.first-part .container .rate .re{
-    color: var(--primary-h1);
-    font-size: 14px;
-    font-weight: 700
+.first-part .container .rate {
+    padding-top: 10px;
 }
 .first-part .container .rate div{
     position: relative;
