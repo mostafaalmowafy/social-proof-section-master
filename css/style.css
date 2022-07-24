@@ -68,8 +68,8 @@ body {
     justify-content: space-around;
 }
 .first-part .container .info {
-    width: 250px;
-    min-width: 250px;
+    width: 300px;
+    min-width: 300px;
     text-align: left;
 }
 .first-part .container .info h1 {
@@ -82,23 +82,23 @@ body {
         margin-left: 30px;
     }
     .first-part .container .rate{
-        margin-left: -180px;
+        margin-left: -220px;
     }
 }
-
+@media (min-width: 768px)and (max-width:1440px){
+    .first-part .container .info {
+        margin-left: 30px;
+    }
+    .first-part .container .rate{
+        margin-left: 185px;
+    }
+}
 .first-part .container .info p {
     color: var(--neutral-100);
     font-size: 14px;
     font-weight: 400;
 }
-@media (min-width: 768px)and (max-width:1440px){
-    .first-part .container .info {
-        margin-left: 35px;
-    }
-    .first-part .container .rate{
-        margin-left: 235px;
-    }
-}
+
 .first-part .container .rate {
     padding-top: 10px;
 }
