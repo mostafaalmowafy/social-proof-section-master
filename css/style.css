@@ -11,15 +11,29 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+main{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 1200px;
+    height: 100vh;
+    position: relative;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-top: 70px;
     padding-bottom: 70px;
 }
-@media (min-width:320px){
+@media (min-width:320px) and (max-width:768px){
     .container {
         width: 250px;  
+    }
+    main {
+        width: 420px;
+        height: 100%;
+        align-items: center;
     }
 }
 /* Small */
@@ -54,9 +68,7 @@ body {
     background-color: white;
     background-image: url(../images/bg-pattern-bottom-desktop.svg) , url(../images/bg-pattern-top-desktop.svg);
     background-repeat: no-repeat;
-    background-position: bottom right , top left ;
-    text-align: center;
-    height: 100vh;
+    background-position: bottom right , top left ;  
 }
 @media (min-width:320px)and (max-width:768px){
     body {background-size: 100%, 70%;
@@ -64,35 +76,35 @@ body {
 }
 /* start first-part */
 .first-part .container {
-    display: flex;
-    justify-content: space-around;
+    display: flex;margin-left: 100px;
 }
 .first-part .container .info {
     width: 300px;
     min-width: 300px;
     text-align: left;
+    
 }
 .first-part .container .info h1 {
     color: var(--primary-h1);
     font-size: 36px;
     font-weight: 700;
 }
-@media (min-width: 1440px){
+/* @media (min-width: 1440px){
     .first-part .container .info {
         margin-left: 30px;
     }
     .first-part .container .rate{
         margin-left: -220px;
     }
-}
-@media (min-width: 768px)and (max-width:1440px){
+} */
+/* @media (min-width: 768px)and (max-width:1440px){
     .first-part .container .info {
         margin-left: 30px;
     }
     .first-part .container .rate{
         margin-left: 185px;
     }
-}
+} */
 .first-part .container .info p {
     color: var(--neutral-100);
     font-size: 14px;
@@ -101,6 +113,8 @@ body {
 
 .first-part .container .rate {
     padding-top: 10px;
+    position: absolute; 
+    right: 110px;
 }
 .first-part .container .rate div{
     position: relative;
@@ -114,6 +128,7 @@ body {
 }
 @media (min-width:320px)and (max-width:768px){
     .first-part .container .rate{
+        position: initial;
         margin-left: -45px;
         
     }
@@ -170,6 +185,9 @@ body {
     .first-part .container .rate .re:nth-of-type(3){
         margin-left: 0px;
     }
+    .first-part .container .rate .re{
+        text-align:center ;
+    }
 }
 
 /* end first-part */
@@ -178,21 +196,19 @@ body {
 
 .secound-part .container{
     display: flex;
-    justify-content: center;
+    margin-left: 50px;
     padding-top: 0px;
-    margin-top: -20px;
 }
 @media (min-width:320px)and (max-width:768px){
     .secound-part .container  {
         flex-direction: column;
-        
     }  
 
 
 }
 .secound-part .container .smith ,.roberts ,.wallace{
     background-color: var(--primary-h1);
-    margin-left: 30px;
+    margin-left: 40px;
     border-radius: 10px;
     padding: 40px;
     color: white;
@@ -209,7 +225,7 @@ body {
         max-width: 300px;min-width: 250px;
         max-height:260px ;min-height: 250px;
         padding: 30px;
-        margin-left: -15px;
+        margin-left: 30px;
     }
 }
 .secound-part .container .name ,.status{
